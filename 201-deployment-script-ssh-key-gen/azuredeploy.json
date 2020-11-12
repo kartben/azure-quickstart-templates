@@ -81,7 +81,7 @@
         },
         {
             "type": "Microsoft.Authorization/roleAssignments",
-            "apiVersion": "2019-04-01-preview",
+            "apiVersion": "2020-04-01-preview",
             "name": "[variables('roleDefinitionName')]",
             "dependsOn": [
                 "[variables('identityName')]"
@@ -95,7 +95,7 @@
         },
         {
             "type": "Microsoft.Resources/deploymentScripts",
-            "apiVersion": "2020-10-01-preview",
+            "apiVersion": "2019-10-01-preview",
             "name": "[variables('scriptName')]",
             "location": "[parameters('location')]",
             "dependsOn": [
